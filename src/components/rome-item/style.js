@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const ItemWrapper = styled.div`
-  width: 25%;
+  width: ${props => props.itemWidth};
   padding: 8px;
+  flex-shrink: 0;
   .inner {
     width: 100%;
   }
@@ -34,18 +35,10 @@ export const ItemWrapper = styled.div`
         align-items: center;
         width: 83px;
         height: 100%;
-        background: linear-gradient(
-          to left,
-          transparent 0%,
-          rgba(0, 0, 0, 0.25) 100%
-        );
+        background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
 
         &.right {
-          background: linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.25) 100%
-          );
+          background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
         }
       }
     }

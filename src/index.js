@@ -5,9 +5,9 @@ import store from './store'
 import theme from './assets/theme'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './assets/css/index.less'
-import 'normalize.css'
 import 'antd/dist/antd.less'
+import 'normalize.css'
+import './assets/css/index.less'
 import { HashRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
