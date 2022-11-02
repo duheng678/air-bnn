@@ -12,7 +12,6 @@ const ScrollView = memo(props => {
   const scrollRef = useRef()
 
   useEffect(() => {
-    console.log('hh')
     const scrollWidth = scrollRef.current.scrollWidth
     const clientWidth = scrollRef.current.clientWidth
     totalDistance.current = scrollWidth - clientWidth

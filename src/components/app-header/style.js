@@ -6,4 +6,10 @@ export const HeaderWrapper = styled.div`
   height: 80px;
   border-bottom: 1px solid #eee;
   font-size: 14px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
 `

@@ -8,7 +8,6 @@ const SectionTabs = memo(props => {
   const { tabNames = [], tabClick } = props
   const [currentIndex, setCurrentIndex] = useState(0)
   const itemClickHandle = (e, index, item) => {
-    console.log(e)
     e.clientX = 0
     setCurrentIndex(index)
     tabClick(index, item)

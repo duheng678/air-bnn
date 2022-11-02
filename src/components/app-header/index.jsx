@@ -4,7 +4,6 @@ import HeaderLeft from './cpns/header-left'
 import HeaderRight from './cpns/header-right'
 import { HeaderWrapper } from './style'
 const AppHeader = memo(() => {
-  console.log('header')
   return (
     <HeaderWrapper>
       <HeaderLeft />
