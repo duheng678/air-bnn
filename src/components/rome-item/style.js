@@ -54,9 +54,9 @@ export const ItemWrapper = styled.div`
 
       .item {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 20%;
+        width: 14.29%;
 
         .dot {
           width: 6px;
@@ -67,6 +67,14 @@ export const ItemWrapper = styled.div`
           &.active {
             width: 8px;
             height: 8px;
+          }
+          &.se-active {
+            width: 5px;
+            height: 5px;
+          }
+          &.th-active {
+            width: 3px;
+            height: 3px;
           }
         }
       }

@@ -14,7 +14,7 @@ const EntirePagination = memo(props => {
   const totalPage = Math.ceil(totalCount / 20)
   const startSize = currentPage * 20 + 1
   const endSize = (currentPage + 1) * 20
-
+  console.log(currentPage)
   const pageChangeHandle = (e, pageCount) => {
     window.scrollTo(0, 0)
     dispatch(fetchRoomListAction(pageCount))

@@ -20,7 +20,7 @@ export const changeIsLoadingAction = isLoading => ({
 export const fetchRoomListAction = (page = 0) => {
   return async (dispatch, getState) => {
     dispatch(changeIsLoadingAction(true))
-    dispatch(changeCurrentPageAction(page - 1))
+    dispatch(changeCurrentPageAction(page))
     // const currentPage = getState().entire.currentPage
     const res = await getEntireRoomList(page)
     dispatch(changeIsLoadingAction(false))
