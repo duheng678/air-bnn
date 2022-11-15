@@ -8,6 +8,7 @@ import { HomeWrapper } from './style'
 import { isEmptyObject } from '@/utils'
 import HomeSectionV3 from './c-cpns/home-section-v3'
 import HomeSectionV4 from './c-cpns/home-section-v4'
+import { changeHeaderConfigAction } from '@/store/modules/main'
 const Home = memo(() => {
   const dispatch = useDispatch()
   const { goodPriceInfo, highScoreInfo, discountInfo, recommendInfo, longForInfo, plusInfo } =
@@ -25,6 +26,7 @@ const Home = memo(() => {
 
   useEffect(() => {
     dispatch(fetchHomeDataAction())
+    dispatch(changeHeaderConfigAction({ isFixed: true, isAlpha: true }))
   }, [dispatch])
 
   return (

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const RoomsWrapper = styled.div`
-  padding: 88px 20px 40px;
+  padding: 40px 20px 40px;
   position: relative;
   .title {
     font-size: 22px;

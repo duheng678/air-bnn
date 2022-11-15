@@ -13,15 +13,15 @@ import { HashRouter } from 'react-router-dom'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // <React.StrictMode>
-  <Suspense fallback="loading">
-    <HashRouter>
-      <Provider store={store}>
+  <HashRouter>
+    <Provider store={store}>
+      <Suspense fallback="loading">
         <ThemeProvider theme={theme}>
           <App />
         </ThemeProvider>
-      </Provider>
-    </HashRouter>
-  </Suspense>
+      </Suspense>
+    </Provider>
+  </HashRouter>
   //</React.StrictMode>
 )
 

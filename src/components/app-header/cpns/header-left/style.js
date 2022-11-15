@@ -6,7 +6,7 @@ export const LeftWrapper = styled.div`
   align-items: center;
   .logo {
     cursor: pointer;
-    color: ${props => props.theme.color.primaryColor};
+    color: ${props => (props.theme.isAlpha ? '#fff' : props.theme.color.primaryColor)};
     margin-left: 24px;
   }
 `

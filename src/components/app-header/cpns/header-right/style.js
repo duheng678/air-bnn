@@ -7,7 +7,8 @@ export const RightWrapper = styled.div`
   align-items: center;
   font-weight: 600;
   padding-right: 20px;
-  color: ${props => props.theme.text.primaryColor};
+  color: ${props => (props.theme.isAlpha ? '#fff' : '#484848')};
+
   .btns {
     display: flex;
     align-items: center;
@@ -20,7 +21,7 @@ export const RightWrapper = styled.div`
       border-radius: 22px;
 
       &:hover {
-        background-color: #f5f5f5;
+        background-color: ${props => (props.theme.isAlpha ? 'rgba(255,255,255,0.3)' : '#fff')};
       }
     }
   }
